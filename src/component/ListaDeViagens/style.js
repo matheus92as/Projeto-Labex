@@ -35,14 +35,15 @@ export const CardViagem = styled.div`
     padding: 20px;
     margin: 20px 0;
     width: 65%;
-    border-radius: 20px;
+    border-radius: 15px;
+    background-color: rgba(188,188,188,0.2);
     p{
         margin:10px;
     }
     transition: 0.3s;
         :hover{
-            transform: scale(1.1);
-            transition: 0.3s;
+            transform: scale(1.01);
+            transition: 0.35s;
             box-shadow: 5px 5px 10px gray;
         }
 `

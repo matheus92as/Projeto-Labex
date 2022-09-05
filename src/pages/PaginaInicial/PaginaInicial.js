@@ -27,7 +27,7 @@ const PaginaInicial = () => {
         <h1>
           Encontre viagens espaciais, explore a galaxia, ou se preferir cadastre-se, crie a propria viagem e chame os seus amigos
         </h1>
-          <ListaDeViagens/>
+        <ListaDeViagens/>
     </MainContainer>
   )
 }
