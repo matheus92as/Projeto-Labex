@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
     align-items: center;
     height: 15vh;
     width: 100%;
-    background-color: #303030;
+    background-image: linear-gradient( #303030 60%, rgba(255,0,0,0));
     color: white;
     font-size: 24px;
     h1{
