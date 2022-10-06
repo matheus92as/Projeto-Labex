@@ -1,0 +1,49 @@
+import styled from 'styled-components'
+
+export const MainContainer = styled.div`
+    width: 100%;
+    min-height: 15vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+    background-image: linear-gradient( rgba(255,0,0,0), #303030 40%);
+    /* background-color: greenyellow; */
+`
+export const AppSocialBox = styled.div`
+    width: 90%;
+    padding: 25px 0px;
+    display: flex;
+`
+export const AppDown = styled.div`
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    img{
+        width: 120px;
+        margin-right: 10px;
+    }
+`
+export const Social = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    img{
+        width: 45px;
+        margin-right: 10px;
+    }
+`
+export const Infs = styled.div`
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    p{
+        font-size: 13px;
+    }
+`

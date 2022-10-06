@@ -21,5 +21,7 @@ export const MainContainer = styled.div`
     h1{
         width: 70%;
         margin: 25px 0;
+        font-family: 'Orbitron', sans-serif;
+        text-shadow: 2px 5px 5px #000000;
     }
 `

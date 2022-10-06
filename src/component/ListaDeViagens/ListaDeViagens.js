@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import {CardViagem, MainContainer, ListContainer} from './style'
+import {CardViagem, MainContainer, ListContainer, BoxList, Planet} from './style'
 import { abreInscriçãoDeslogado, abreInscriçãoLogado } from '../../routes/coordinator'
 import { PegaLista } from '../../customHooks/Requests'
 import planeta from '../../img/planeta.png'
@@ -24,14 +24,16 @@ const ListaDeViagens = () => {
 
   return (
     <MainContainer>
-        {params.log === "logado"?
-        <img src={planeta} alt="planeta" onClick={()=>abreInscriçãoLogado(navegar,"inscricao")}/>
-        :
-        <img src={planeta} alt="planeta" onClick={()=>abreInscriçãoDeslogado(navegar, "inscricao")}/>
-        }
-        <ListContainer>
-            {cardsViagens}
-        </ListContainer>
+        <BoxList>
+            {params.log === "logado"?
+            <Planet src={planeta} alt="planeta" onClick={()=>abreInscriçãoLogado(navegar,"inscricao")}/>
+            :
+            <Planet src={planeta} alt="planeta" onClick={()=>abreInscriçãoDeslogado(navegar, "inscricao")}/>
+            }
+            <ListContainer>
+                {cardsViagens}
+            </ListContainer>
+        </BoxList>
     </MainContainer>
   )
 }

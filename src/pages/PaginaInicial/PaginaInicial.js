@@ -6,6 +6,7 @@ import ListaDeViagens from '../../component/ListaDeViagens/ListaDeViagens'
 import InscriçãoViagem from '../../modal/InscriçãoViagem/InscriçãoViagem'
 import Login from '../../modal/Login/Login'
 import { pagInicial } from '../../routes/coordinator'
+import Footer from '../../component/Footer/Footer'
 
 const PaginaInicial = () => {
   const params = useParams()
@@ -28,6 +29,7 @@ const PaginaInicial = () => {
           Encontre viagens espaciais, explore a galaxia, ou se preferir cadastre-se, crie a propria viagem e chame os seus amigos
         </h1>
         <ListaDeViagens/>
+        <Footer/>
     </MainContainer>
   )
 }

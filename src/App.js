@@ -1,11 +1,14 @@
 import Router from "./routes/Router";
 import {MainContainer} from './AppStyle'
+import { ParallaxProvider } from "react-scroll-parallax";
 
 
 function App() {
   return (
     <MainContainer>
-      <Router/>
+      <ParallaxProvider>
+        <Router/>
+      </ParallaxProvider>
     </MainContainer>
   );
 }
