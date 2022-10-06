@@ -5,28 +5,6 @@ export const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 21px;
-    img{
-        cursor: pointer;
-        position: fixed;
-        top: 35%;
-        left: 10%;
-        width: 120px;
-        height: 120px;
-        transition: 0.3s;
-        animation: flutua 2.5s infinite alternate ease-in-out;
-        @keyframes flutua {
-            from{
-            top: 35%;
-        }
-        to{
-            top: 40%;
-        }   
-        }
-        :hover{
-            transform: scale(1.1);
-            transition: 0.3s;
-        }
-    }
 `
 export const CardViagem = styled.div`
     display: flex;
@@ -34,9 +12,10 @@ export const CardViagem = styled.div`
     text-align: start;
     padding: 20px;
     margin: 20px 0;
-    width: 65%;
-    border-radius: 15px;
-    background-color: rgba(188,188,188,0.2);
+    width: 85%;
+    border-radius: 10px;
+    background-color: rgba(68,68,68,0.4);
+    font-family: 'Electrolize', sans-serif;
     p{
         margin:10px;
     }
@@ -44,7 +23,7 @@ export const CardViagem = styled.div`
         :hover{
             transform: scale(1.01);
             transition: 0.35s;
-            box-shadow: 5px 5px 10px gray;
+            box-shadow: 0px 0px 15px gray;
         }
 `
 export const ListContainer = styled.div`
@@ -53,4 +32,36 @@ export const ListContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 90%;
+`
+export const BoxList = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: relative;
+`
+
+export const Planet =styled.img`
+    cursor: pointer;
+    position: sticky;
+    margin-top: 0%;
+    z-index: 1;
+    align-self: flex-start;
+    width: 120px;
+    height: 120px;
+    transition: 0.3s;
+    animation: flutua 2.5s infinite alternate ease-in-out;
+    @keyframes flutua {
+        from{
+        top: 60%;
+    }
+    to{
+        top: 65%;
+    }   
+    }
+    :hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
 `

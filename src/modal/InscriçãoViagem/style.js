@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Background = styled.div`
     display: flex;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     overflow: auto;
     width: 100%;
     height: 100%;
@@ -15,12 +15,13 @@ export const MainContainer = styled.div`
     align-items: center;
     width: 700px;
     height: 500px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
     background-color: whitesmoke;
     margin: auto;
     h1{
         margin-top: 50px;
+        text-shadow: none;
     }
     button{
         width: 90px;

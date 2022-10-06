@@ -4,15 +4,16 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: end;
     align-items: center;
-    height: 15vh;
+    height:20vh;
     width: 100%;
-    background-image: linear-gradient( #303030 60%, rgba(255,0,0,0));
+    background-image: linear-gradient( #303030 70%, rgba(255,0,0,0));
     color: white;
     font-size: 24px;
     h1{
         width: auto;
         position: absolute;
         right: 45%;
+        margin-bottom: 50px;
     }
     img{
         width: 50px;
