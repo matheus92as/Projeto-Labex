@@ -9,6 +9,13 @@ const Login = () => {
   const { formulario, onChange, limpaInputs } = useForm({ email: "", password: "" });
   const navegar = useNavigate()
 
+  const clickFora = (event) => {
+    let modal = document.getElementById("modal");
+    if (!modal.contains(event.target)) {
+      voltarPag(navegar)
+    }
+  }
+
   const logar = (event) => {
     event.preventDefault()
       axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/matheus-souza-shaw/login",formulario)
@@ -23,8 +30,8 @@ const Login = () => {
   };
 
   return (
-    <Background>
-        <MainContainer>
+    <Background onClick={clickFora}>
+        <MainContainer id='modal'>
         <h1>Login</h1>
           <form onSubmit={logar}>
             <input
@@ -45,8 +52,8 @@ const Login = () => {
             />
             <button>Enviar</button>
           </form>
-          <button onClick={()=>voltarPag(navegar)}>
-                Voltar
+          <button className='fechar' onClick={()=>voltarPag(navegar)}>
+                X
           </button>
         </MainContainer>  
     </Background>

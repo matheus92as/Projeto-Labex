@@ -1,9 +1,10 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { pagGerenciar, pagInicial, abreLogin } from '../../routes/coordinator'
-import { MainContainer } from './style'
+import { Login, Logo, MainContainer } from './style'
 import astronauta from '../../img/astronauta.png'
 import sistema2 from '../../img/sistema2.png'
+import labex from '../../img/logoLabex.png'
 
 const Header = () => {
     const navegar = useNavigate()
@@ -11,7 +12,7 @@ const Header = () => {
 
   return (
     <MainContainer>
-        <h1>Labex</h1>
+        <Logo src={labex}/>
         {params.log === "logado" || params.modal === "novaViagem" || params.page === "gerenciar" 
         || params.id
         ? 
@@ -35,10 +36,10 @@ const Header = () => {
           }         
         </div>
         :
-        <div className='login' onClick={()=>abreLogin(navegar,"login")}>
+        <Login onClick={()=>abreLogin(navegar,"login")}>
           <img src={astronauta} alt="Astronauta"/>
           <button >Login</button>
-        </div>
+        </Login>
         }
     </MainContainer>
   )

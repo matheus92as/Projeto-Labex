@@ -15,11 +15,22 @@ export const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 700px;
-    height: 400px;
+    height: 300px;
+    position: relative;
     border-radius: 20px;
     background-color: whitesmoke;
     color: black;
+    font-family: 'Electrolize', sans-serif;
     margin: auto;
+    animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    @keyframes scale-in{
+        0%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
     button{
         width: 90px;
         padding: 5px 10px;
@@ -28,6 +39,7 @@ export const MainContainer = styled.div`
         background-color: inherit;
         transition: 0.3s;
         font-size: 21px;
+        font-family: 'Electrolize', sans-serif;
         :hover{
             transition: 0.3s;
             transform: scale(1.1);
@@ -47,6 +59,15 @@ export const MainContainer = styled.div`
             padding: 5px;
             margin: 5px;
             border-radius: 5px;
+            font-family: 'Electrolize', sans-serif;
         }
+    }
+    .fechar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5;
+        width: auto;
+        border-radius: 15px;
     }
 `

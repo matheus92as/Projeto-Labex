@@ -15,9 +15,6 @@ export const MainContainer = styled.div`
         right: 45%;
         margin-bottom: 50px;
     }
-    img{
-        width: 50px;
-    }
     button{
         border: none;
         color: white;
@@ -29,6 +26,9 @@ export const MainContainer = styled.div`
         display: flex;
         flex-direction: row;
         margin: 0 25px;
+        img{
+            width: 50px;
+        }
         .gerenciar{
             display: flex;
             flex-direction: column;
@@ -73,17 +73,30 @@ export const MainContainer = styled.div`
             transform: scale(1.1);    
         }
     }
-    .login{
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 40px;
-        transition: 0.3s;
-        :hover{
-            transition: 0.3s;
-            transform: scale(1.1);
-        }
+`
+export const Login = styled.div`
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    transition: 0.3s;
+    button{
+        font-family: 'Orbitron', sans-serif;
     }
+    img{
+        width: 50px;
+    }
+    :hover{
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+`
+
+export const Logo = styled.img`
+    width: 250px;
+    position: absolute;
+    right: 40%;
+    top: 15px;
 `

@@ -5,6 +5,7 @@ export const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 21px;
+    margin: 200px 0;
 `
 export const CardViagem = styled.div`
     display: flex;
