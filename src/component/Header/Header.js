@@ -11,7 +11,7 @@ const Header = () => {
     const params = useParams()
 
   return (
-    <MainContainer>
+    <MainContainer id='top'>
         <Logo src={labex}/>
         {params.log === "logado" || params.modal === "novaViagem" || params.page === "gerenciar" 
         || params.id

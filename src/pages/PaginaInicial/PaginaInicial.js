@@ -8,9 +8,9 @@ import Login from '../../modal/Login/Login'
 import { pagInicial } from '../../routes/coordinator'
 import Footer from '../../component/Footer/Footer'
 import planeta from '../../img/planetaParalax.png'
-import teste from '../../img/teste.png'
 import nave from '../../img/naveParalax.png'
 import terra from '../../img/terraParalax.png'
+import red from '../../img/red.png'
 
 const PaginaInicial = () => {
   const params = useParams()
@@ -33,13 +33,14 @@ const PaginaInicial = () => {
         <Parallax>
           <img src={terra} className='terra'/>
           <img src={nave} className='nave'/>
-          <img src={teste} className='planeta'/>
+          <img src={planeta} className='planeta'/>
           <h1>
             Encontre viagens espaciais, explore a galaxia, ou se preferir crie a própria viagem e chame os seus amigos!
           </h1>
+        <img src={red} className='red'/>
         </Parallax>
         <ListaDeViagens/>
-        <Footer/>
+        <Footer id='footer'/>
       </SecondContainer>
     </MainContainer>
   )

@@ -18,6 +18,7 @@ export const AppSocialBox = styled.div`
     width: 90%;
     padding: 25px 0px;
     display: flex;
+    justify-content: space-between;
 `
 export const AppDown = styled.div`
     width: 35%;
@@ -30,7 +31,7 @@ export const AppDown = styled.div`
     }
 `
 export const Social = styled.div`
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -46,4 +47,7 @@ export const Infs = styled.div`
     p{
         font-size: 13px;
     }
+`
+export const Logo = styled.img`
+    width: 200px;
 `

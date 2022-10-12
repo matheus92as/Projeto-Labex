@@ -1,18 +1,15 @@
 import React from 'react'
-import { AppDown, AppSocialBox, Infs, MainContainer, Social } from './styled'
+import { AppDown, AppSocialBox, Infs, Logo, MainContainer, Social } from './styled'
 import apple from '../../img/socialAppstore.png'
 import google from '../../img/socialGoogleplay.png'
 import face from '../../img/face.png'
 import insta from '../../img/insta.png'
 import twitter from '../../img/twitter.png'
+import labex2 from '../../img/logoLabex2.png'
 
 const Footer = () => {
   return (
     <MainContainer>
-        {/* <div>
-        Footer
-
-        </div> */}
         <AppSocialBox>
             <AppDown>
                 <p>Baixe nosso aplicativo</p>
@@ -29,10 +26,8 @@ const Footer = () => {
                     <img src={twitter}/>
                 </div>
             </Social>
+            <a href='#top'> <Logo src={labex2}/> </a> 
         </AppSocialBox>
-        {/* <div>
-        Footer
-        </div> */}
         <Infs>
             <p>Labex Operadora e Agência de Viagens S.A - CNPJ: 15.768.260/00016-19 Rua da Lua, 227, 21 andar, sala 2211 | Bairro Espacial, Varginha - SP CEP: 91090-350</p>
         </Infs>

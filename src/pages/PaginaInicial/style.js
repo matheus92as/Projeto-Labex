@@ -26,11 +26,15 @@ export const SecondContainer = styled.div`
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    position: relative;
     h1{
         width: 70%;
         margin: 25px 0;
         font-family: 'Orbitron', sans-serif;
         text-shadow: 2px 5px 5px #000000;
+    }
+    #footer{
+        align-self: flex-end;
     }
 `
 
@@ -67,5 +71,13 @@ export const Parallax = styled.div`
         object-fit: cover; 
         transform: translateZ(-5px) scale(1.5); 
         z-index : -3;
+    }
+    .red{
+        width: 30%;
+        position: absolute;
+        object-fit: cover;
+        bottom: -2300px;
+        right: -450px;
+        transform: translateZ(-15px) scale(2.5);
     }
 `
