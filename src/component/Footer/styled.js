@@ -11,6 +11,8 @@ export const MainContainer = styled.div`
     align-items: center;
     color: white;
     font-size: 21px;
+    font-family: 'Electrolize', sans-serif;
+text-shadow: 2px 5px 5px #000000;
     background-image: linear-gradient( rgba(255,0,0,0), #303030 40%);
     /* background-color: greenyellow; */
 `

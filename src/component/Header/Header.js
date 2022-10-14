@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { pagGerenciar, pagInicial, abreLogin } from '../../routes/coordinator'
-import { Login, Logo, MainContainer } from './style'
+import { Login, Logo, Logout, MainContainer } from './style'
 import astronauta from '../../img/astronauta.png'
 import sistema2 from '../../img/sistema2.png'
 import labex from '../../img/logoLabex.png'
@@ -16,22 +16,24 @@ const Header = () => {
         {params.log === "logado" || params.modal === "novaViagem" || params.page === "gerenciar" 
         || params.id
         ? 
-        <div >
+        <div>
           {params.modal === "novaViagem" || params.page === "gerenciar" || params.modal === "inscricao" || params.id ? 
-              <div className='logout' onClick={()=>pagInicial(navegar)}>
+            <div className='botoes'>
+              <Logout onClick={()=>pagInicial(navegar)}>
                 <img src={astronauta} alt="Astronauta"/>
                 <button>Logout</button>
-              </div>
+              </Logout>
+            </div>
           :
           <div className='botoes'>
             <div className='gerenciar' onClick={()=>pagGerenciar(navegar,"gerenciar")}>
               <img src={sistema2} alt="Astronauta"/>
               <button>Gerenciar</button>
             </div>
-            <div className='logout' onClick={()=>pagInicial(navegar)}>
+            <Logout onClick={()=>pagInicial(navegar)}>
               <img src={astronauta} alt="Astronauta"/>
               <button>Logout</button>
-            </div>
+            </Logout>
           </div>
           }         
         </div>

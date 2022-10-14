@@ -19,7 +19,9 @@ export const MainContainer = styled.div`
         border: none;
         color: white;
         background-color:  inherit;
-        font-size: 18px ;
+        font-size: 15px ;
+        font-family: 'Orbitron', sans-serif;
+        margin:  0;
     }
     .botoes{
         cursor: pointer;
@@ -27,53 +29,41 @@ export const MainContainer = styled.div`
         flex-direction: row;
         margin: 0 25px;
         img{
+            margin: 0;
             width: 50px;
         }
-        .gerenciar{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 5px;
-            transition: 0.3s;
-            :hover{
-                transition: 0.3s;
-                transform: scale(1.1);    
-            }
-        }
-        .logout{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 5px;
-            transition: 0.3s;
-            :hover{
-                transition: 0.3s;
-                transform: scale(1.1);    
-            }
-        }
     }
-    .logout{
-        cursor: pointer;
+    .gerenciar{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 20px;
+        margin: 5px;
         transition: 0.3s;
-        img{
-            margin: 0px;
-        }
-        button{
-            margin: 0px;
-        }
         :hover{
             transition: 0.3s;
             transform: scale(1.1);    
         }
     }
 `
+
+export const Logout = styled.div`
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 25px;
+        transition: 0.3s;
+        :hover{
+            transition: 0.3s;
+            transform: scale(1.1);    
+        }
+        img{
+            width: 50px;
+        }
+`
+
 export const Login = styled.div`
     cursor: pointer;
     display: flex;

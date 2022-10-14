@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { PegaLista } from '../../customHooks/Requests'
 import { abreDetalhes } from '../../routes/coordinator'
-import { CardLista, MainContainer } from './style'
+import { CardLista, Content, MainContainer } from './style'
 import rostoBuracoNegro from '../../img/rostoBuracoNegro.png'
 import buracoNegro from '../../img/buracoNegro.png'
 import axios from 'axios'
@@ -23,7 +23,7 @@ const ListaGerencia = () => {
         return(
             <CardLista key={viagem.id} >
                 <div onClick={()=>abreDetalhes(navegar,`${viagem.id}`)}>
-                    <p><strong>Nome: </strong>{viagem.name}</p>
+                    <p>{viagem.name}</p>
                 </div>
                 <div className='excluir' onClick={()=>excluiViagem(viagem.id)}>
                     <img className='img1' src={rostoBuracoNegro} alt="Excluir"></img>
@@ -35,7 +35,8 @@ const ListaGerencia = () => {
 
   return (
     <MainContainer>
-        {listaGerenciavel}
+        {viagens.length > 0 ? <Content>{listaGerenciavel}</Content> : <h2>Carregando lista</h2>}
+        {/* {listaGerenciavel} */}
     </MainContainer>
   )
 }

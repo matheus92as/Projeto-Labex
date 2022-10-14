@@ -13,6 +13,13 @@ const CriarViagem = () => {
       { name: "", date: "", description: "", durationInDays: "", planet: "" }
     );
 
+    const clickFora = (event) => {
+      let modal = document.getElementById("modal");
+      if (!modal.contains(event.target)) {
+        voltarPag(navegar)
+      }
+    }
+
     const novaViagem =(event)=>{
       event.preventDefault()
       const token = localStorage.getItem("token");
@@ -26,8 +33,8 @@ const CriarViagem = () => {
     }
 
   return (
-    <Background>
-        <MainContainer>
+    <Background onClick={clickFora}>
+        <MainContainer id='modal'>
         <h1>Crie sua Viagem</h1>
           <form onSubmit={novaViagem}>
             <select name="planet" value={formulario.planet} onChange={onChange}>
@@ -69,8 +76,8 @@ const CriarViagem = () => {
               />
               <button>Enviar</button>
             </form>
-            <button onClick={()=>voltarPag(navegar)}>
-                Voltar
+            <button className='fechar' onClick={()=>voltarPag(navegar)}>
+                X
             </button>
         </MainContainer>
     </Background>

@@ -14,11 +14,22 @@ export const MainContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 700px;
-    height: 500px;
+    height: 440px;
+    position: relative;
     border-radius: 20px;
     background-color: whitesmoke;
     color: black;
+    font-family: 'Electrolize', sans-serif;
     margin: auto;
+    animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    @keyframes scale-in{
+        0%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
     h1{
         margin-top: 60px;
     }
@@ -28,6 +39,7 @@ export const MainContainer = styled.div`
         margin: 5px;
         border-radius: 5px ;
         color: black;
+        font-family: 'Electrolize', sans-serif;
         background-color: inherit;
         transition: 0.3s;
         font-size: 21px;
@@ -50,12 +62,22 @@ export const MainContainer = styled.div`
             padding: 5px;
             margin: 5px;
             border-radius: 5px;
+            font-family: 'Electrolize', sans-serif;
         }
         select{
             width: 100%;
             padding: 5px;
             margin: 5px;
             border-radius: 5px;
+            font-family: 'Electrolize', sans-serif;
         }
+    }
+    .fechar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5;
+        width: auto;
+        border-radius: 15px;
     }
 `

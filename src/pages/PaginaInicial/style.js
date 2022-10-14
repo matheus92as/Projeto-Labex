@@ -36,6 +36,9 @@ export const SecondContainer = styled.div`
     #footer{
         align-self: flex-end;
     }
+    .listbox{
+        min-height: 2000px;
+    }
 `
 
 export const Parallax = styled.div`
@@ -76,7 +79,7 @@ export const Parallax = styled.div`
         width: 30%;
         position: absolute;
         object-fit: cover;
-        bottom: -2300px;
+        bottom: -1900px;
         right: -450px;
         transform: translateZ(-15px) scale(2.5);
     }

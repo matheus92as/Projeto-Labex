@@ -39,7 +39,9 @@ const PaginaInicial = () => {
           </h1>
         <img src={red} className='red'/>
         </Parallax>
-        <ListaDeViagens/>
+        <div className='listbox'>
+          <ListaDeViagens/>
+        </div>
         <Footer id='footer'/>
       </SecondContainer>
     </MainContainer>
