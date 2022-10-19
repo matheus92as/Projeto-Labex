@@ -12,9 +12,8 @@ export const MainContainer = styled.div`
     color: white;
     font-size: 21px;
     font-family: 'Electrolize', sans-serif;
-text-shadow: 2px 5px 5px #000000;
+    text-shadow: 2px 5px 5px #000000;
     background-image: linear-gradient( rgba(255,0,0,0), #303030 40%);
-    /* background-color: greenyellow; */
 `
 export const AppSocialBox = styled.div`
     width: 90%;
@@ -28,6 +27,7 @@ export const AppDown = styled.div`
     flex-direction: column;
     align-items: flex-start;
     img{
+        cursor: pointer;
         width: 120px;
         margin-right: 10px;
     }
@@ -38,6 +38,7 @@ export const Social = styled.div`
     flex-direction: column;
     align-items: flex-start;
     img{
+        cursor: pointer;
         width: 45px;
         margin-right: 10px;
     }

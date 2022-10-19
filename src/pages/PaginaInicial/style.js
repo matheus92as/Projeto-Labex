@@ -33,9 +33,6 @@ export const SecondContainer = styled.div`
         font-family: 'Orbitron', sans-serif;
         text-shadow: 2px 5px 5px #000000;
     }
-    #footer{
-        align-self: flex-end;
-    }
     .listbox{
         min-height: 2000px;
     }

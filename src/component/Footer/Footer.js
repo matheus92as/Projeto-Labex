@@ -14,16 +14,26 @@ const Footer = () => {
             <AppDown>
                 <p>Baixe nosso aplicativo</p>
                 <div>
-                    <img src={apple}/>
-                    <img src={google}/>
+                    <a href='https://www.apple.com/br/app-store/' target="_blank" rel="noopener noreferrer">
+                        <img src={apple}/>
+                    </a>
+                    <a href='https://play.google.com/store/apps' target="_blank" rel="noopener noreferrer">
+                        <img src={google}/>
+                    </a>
                 </div>
             </AppDown>
             <Social>
                 <p>Sigua nossa redes</p>
                 <div>
-                    <img src={face}/>
-                    <img src={insta}/>
-                    <img src={twitter}/>
+                    <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer">
+                        <img src={face}/>
+                    </a>
+                    <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer">
+                        <img src={insta}/>
+                    </a>
+                    <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer">
+                        <img src={twitter}/>
+                    </a>
                 </div>
             </Social>
             <a href='#top'> <Logo src={labex2}/> </a> 

@@ -3,8 +3,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Header from '../../component/Header/Header'
 import { decisao, PegaDetalhe } from '../../customHooks/Requests'
 import { pagGerenciar, pagInicial } from '../../routes/coordinator'
-import { ListaCandidatos, MainContainer } from './styled'
+import { Botoes, Infs, ListaCandidatos, MainContainer } from './styled'
 import voltaNave from '../../img/voltaNave.png'
+import Footer from '../../component/Footer/Footer'
 
 const DetalhesViagem = () => {
   const navegar = useNavigate()
@@ -24,20 +25,20 @@ const DetalhesViagem = () => {
   return (
     <MainContainer>
       <Header/>
-      <div className='voltar'>
+      <Botoes>
         <div onClick={()=>pagGerenciar(navegar,"gerenciar")}>
             <img src={voltaNave} alt="Nave de volta"/>
             <button>Voltar</button>
         </div>
-      </div>
+      </Botoes>
       <h1>{detalhes.name}</h1>
-      <div>
+      <Infs>
       <p><strong>Nome: </strong>{detalhes.name}</p>
       <p><strong>Descrição: </strong>{detalhes.description}</p>
       <p><strong>Planeta: </strong>{detalhes.planet}</p>
       <p><strong>Duração: </strong>{detalhes.durationInDays} dias</p>
       <p><strong>Data de saida: </strong>{detalhes.date}</p>
-      </div>
+      </Infs>
       <h1>Candidatos Pendentes</h1>
       {candidatos && candidatos.length > 0 ? detalhes.candidates.map((candidato)=>{
        return(
@@ -62,6 +63,7 @@ const DetalhesViagem = () => {
           </ListaCandidatos>
       )
       }) : <p>Nenhum candidato aprovado</p>}
+      <Footer/>
     </MainContainer>
   )
 }
