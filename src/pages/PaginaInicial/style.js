@@ -18,6 +18,9 @@ export const MainContainer = styled.div`
             background: #242424 url(${espacoVazio});
         }
     }
+    @media screen and (min-device-width:300px) and (max-device-width:425px){
+        
+    }
 `
 
 export const SecondContainer = styled.div`
@@ -35,6 +38,17 @@ export const SecondContainer = styled.div`
     }
     .listbox{
         min-height: 2000px;
+    }
+    @media screen and (min-device-width:280px) and (max-device-width:425px){
+       h1{
+        width: 85%;
+        font-size: 27px;
+       } 
+    }
+    @media screen and (min-device-width:1740px) and (max-device-width:2560px){
+        .listbox{
+        min-height: 1650px;
+    }
     }
 `
 
@@ -79,5 +93,62 @@ export const Parallax = styled.div`
         bottom: -1900px;
         right: -450px;
         transform: translateZ(-15px) scale(2.5);
+    }
+    @media screen and (min-device-width:280px) and (max-device-width:425px){
+        .terra{
+            width: 100%;
+            top: -100px;
+            right: 0;
+            transform: translateZ(-15px) scale(2.5);
+        }
+        .nave{
+            width: 90%;
+            top: 75px;
+            right: -70px;
+        }
+        .planeta{
+            width: 100%;
+            left: -200px;
+            bottom: -10%;
+            object-fit: cover; 
+            transform: translateZ(-5px) scale(1.5); 
+            z-index : -3;
+        }
+        .red{
+            width: 70%;
+            bottom: -1800px;
+        }
+    }
+    @media screen and (min-device-width:1320px) and (max-device-width:1720px){
+        .terra{
+            width: 80%;
+            top: 170px;
+            right: 0;
+        }
+        .planeta{
+            width: 65%;
+        }
+        .nave{
+            width: 50%;
+        }
+    }
+    @media screen and (min-device-width:1721px) and (max-device-width:2560px){
+        .terra{
+            width: 70%;
+            top: 350px;
+            right: -350px;
+        }
+        .planeta{
+            width: 55%;
+            bottom: -850px;
+        }
+        .nave{
+            width: 35%;
+        }
+        .red{
+            width: 20%;
+            bottom: -1500px;
+            right: -45%;
+        }
     }
 `

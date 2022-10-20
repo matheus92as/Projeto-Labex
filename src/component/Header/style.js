@@ -7,14 +7,8 @@ export const MainContainer = styled.div`
     height:20vh;
     width: 100%;
     background-image: linear-gradient( #303030 70%, rgba(255,0,0,0));
-    color: white;
-    font-size: 24px;
-    h1{
-        width: auto;
-        position: absolute;
-        right: 45%;
-        margin-bottom: 50px;
-    }
+    color: white; 
+    position: relative;
     button{
         border: none;
         color: white;
@@ -45,6 +39,20 @@ export const MainContainer = styled.div`
             transform: scale(1.1);    
         }
     }
+    @media screen and (min-device-width:280px) and (max-device-width:425px){
+        height: 15vh;
+        button{
+            font-size: 11px ;
+        }
+        .botoes{
+            margin: 0;
+            margin-right: 10px;
+            img{
+                margin: 0;
+                width: 40px;
+            }
+        }
+    }
 `
 
 export const Logout = styled.div`
@@ -61,6 +69,9 @@ export const Logout = styled.div`
         }
         img{
             width: 50px;
+        }
+        @media screen and (min-device-width:280px) and (max-device-width:425px){
+            margin: 0px;
         }
 `
 
@@ -82,6 +93,11 @@ export const Login = styled.div`
         transition: 0.3s;
         transform: scale(1.1);
     }
+    @media screen and (min-device-width:280px) and (max-device-width:425px){
+        img{
+        width: 40px;
+        }
+    }
 `
 
 export const Logo = styled.img`
@@ -89,4 +105,14 @@ export const Logo = styled.img`
     position: absolute;
     right: 40%;
     top: 15px;
+    @media screen and (min-device-width:300px) and (max-device-width:425px){
+        width: 170px;
+        top: 10%;
+        right: 45%;
+    }
+    @media screen and (min-device-width:280px) and (max-device-width:300px){
+        width: 140px;
+        top: 10%;
+        right: 50%;
+    }
 `

@@ -33,11 +33,11 @@ const DetalhesViagem = () => {
       </Botoes>
       <h1>{detalhes.name}</h1>
       <Infs>
-      <p><strong>Nome: </strong>{detalhes.name}</p>
-      <p><strong>Descrição: </strong>{detalhes.description}</p>
-      <p><strong>Planeta: </strong>{detalhes.planet}</p>
-      <p><strong>Duração: </strong>{detalhes.durationInDays} dias</p>
-      <p><strong>Data de saida: </strong>{detalhes.date}</p>
+        <p><strong>Nome: </strong>{detalhes.name}</p>
+        <p><strong>Descrição: </strong>{detalhes.description}</p>
+        <p><strong>Planeta: </strong>{detalhes.planet}</p>
+        <p><strong>Duração: </strong>{detalhes.durationInDays} dias</p>
+        <p><strong>Data de saida: </strong>{detalhes.date}</p>
       </Infs>
       <h1>Candidatos Pendentes</h1>
       {candidatos && candidatos.length > 0 ? detalhes.candidates.map((candidato)=>{

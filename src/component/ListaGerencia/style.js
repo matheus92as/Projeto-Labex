@@ -55,5 +55,11 @@ export const CardLista = styled.div`
         box-shadow: 0px 2px 5px lightgray;
         border-radius: 5px;
     }
-
+    @media screen and (min-device-width:280px) and (max-device-width:425px){
+        width: 80%;
+        font-size: 18px;
+    }
+    @media screen and (min-device-width:1320px) and (max-device-width:2560px){
+        width: 25%;
+    }
 `
