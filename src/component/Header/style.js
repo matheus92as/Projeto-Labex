@@ -104,7 +104,7 @@ export const Logo = styled.img`
     width: 250px;
     position: absolute;
     right: 40%;
-    top: 15px;
+    top: 7%;
     @media screen and (min-device-width:300px) and (max-device-width:425px){
         width: 170px;
         top: 10%;

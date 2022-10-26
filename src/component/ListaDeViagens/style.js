@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
     justify-content: center;
     font-size: 21px;
 `
+
 export const CardViagem = styled.div`
     display: flex;
     flex-flow: column wrap;
@@ -14,9 +15,11 @@ export const CardViagem = styled.div`
     margin: 20px 0;
     width: 85%;
     border-radius: 10px;
-    background-color: rgba(68,68,68,0.4);
+    background-color: rgba(68,68,68,0.8);
+    border: 3px solid rgba(68,68,68,0.5);
     font-family: 'Electrolize', sans-serif;
     transition: 0.3s;
+    position: relative;
     p{
         margin:10px;
         text-shadow: 2px 3px 5px #000000;
@@ -25,6 +28,36 @@ export const CardViagem = styled.div`
         transform: scale(1.01);
         transition: 0.35s;
         box-shadow: 0px 0px 15px gray;
+        ::before{
+            opacity: 1;
+        }
+    }
+    ::after{
+        border-radius: inherit;
+        content: "";
+        height: 100%;
+        left: 0px;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        transition: opacity 500ms;
+        width: 100%;
+    }
+    ::before{
+        background: radial-gradient(
+            800px circle at ${({ x }) => `${x}px`} ${({ y }) => `${y}px`}, 
+            rgba(255,255,255,0.2), 
+            transparent 40%); 
+        transition: 0.35s;              
+        border-radius: inherit;
+        content: "";
+        opacity:0;
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 2;
     }
     @media screen and (min-device-width:280px) and (max-device-width:425px){
         margin: 15px 0;
@@ -32,14 +65,14 @@ export const CardViagem = styled.div`
             font-size: 18px;
             margin-bottom: 0px;
         }
-    }
+        }
     @media screen and (min-device-width:1740px) and (max-device-width:2560px){
         width: 45%;
         margin: 15px;
     }
-   
 `
-export const ListContainer = styled.div`
+
+export const ListContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
