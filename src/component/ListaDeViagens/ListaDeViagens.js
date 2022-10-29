@@ -5,41 +5,23 @@ import { abreInscriçãoDeslogado, abreInscriçãoLogado } from '../../routes/co
 import { PegaLista } from '../../customHooks/Requests'
 import planeta from '../../img/planeta.png'
 import { useState } from 'react'
-import { useEffect } from 'react'
 
-const ListaDeViagens = (props) => {
+const ListaDeViagens = () => {
     const [coords, setCoords] = useState({x: 0, y: 0});
-//     const [globalCoords, setGlobalCoords] = useState({x: 0, y: 0});
     const viagens = PegaLista()
     const navegar = useNavigate()
     const params = useParams()
 
-    
-    const handleMouseMove = event => {
+    const mouseMove = event => {
         setCoords({
           x: event.clientX - event.target.offsetLeft,
           y: event.clientY - event.target.offsetTop,
         });
     };
 
-    // useEffect(()=>{
-    //     const handleWindowMouseMove = event => {
-    //         setGlobalCoords({
-    //           x: event.screenX,
-    //           y: event.screenY,
-    //         });
-    //     };
-    //     window.addEventListener('mousemove', handleWindowMouseMove);
-      
-    //     return () => {
-    //         window.removeEventListener('mousemove', handleWindowMouseMove);
-    //     };
-    // },[])
-
-
     const cardsViagens = viagens.map((viagem)=>{
         return(
-            <CardViagem onMouseMove={props.moveMouse} x={props.x} y={props.y} key={viagem.id}>
+            <CardViagem onMouseMove={mouseMove} x={coords.x} y={coords.y} key={viagem.id}>
                 <p><strong>Nome: </strong>{viagem.name}</p>
                 <p><strong>Descrição: </strong>{viagem.description}</p>
                 <p><strong>Planeta: </strong>{viagem.planet}</p>

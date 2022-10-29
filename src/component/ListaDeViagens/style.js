@@ -45,7 +45,7 @@ export const CardViagem = styled.div`
     }
     ::before{
         background: radial-gradient(
-            800px circle at ${({ x }) => `${x}px`} ${({ y }) => `${y}px`}, 
+            800px circle at ${({ x }) => `${x}px`} 150px, 
             rgba(255,255,255,0.2), 
             transparent 40%); 
         transition: 0.35s;              
