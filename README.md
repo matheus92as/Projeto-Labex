@@ -19,8 +19,8 @@ Este é um projeto que visa simular um site de viagens, mas com a ideia de criar
 
 ### Link Surge 
 
-Login - matheus92as@gmail.com
-Senha - 13579
+Login - teste@teste.com
+Senha - 12345
 
 - Primeira versão - https://disillusioned-frog.surge.sh
 - Segunda versão - https://likeable-eggs.surge.sh

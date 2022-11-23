@@ -10,6 +10,7 @@ import labex2 from '../../img/logoLabex2.png'
 const Footer = () => {
   return (
     <MainContainer>
+        <div className='bg'></div>
         <AppSocialBox>
             <AppDown>
                 <p>Baixe nosso aplicativo</p>
