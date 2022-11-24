@@ -5,6 +5,7 @@ import { voltarPag } from '../../routes/coordinator'
 import { PegaLista, useForm } from '../../customHooks/Requests'
 import {Paises} from '../../constants/Paises'
 import axios from 'axios'
+import swal from 'sweetalert';
 
 const InscriçãoViagem = () => {
     const [id,setId] = useState()
@@ -32,7 +33,13 @@ const InscriçãoViagem = () => {
         .then((resposta)=>{
           limpaInputs()
           voltarPag(navegar)
-          alert("Cadastro realizado, boa viagem!")
+          swal({
+            title: "Cadastro realizado",
+            text: "Boa viagem!",
+            icon: "success",
+            buttons: false,
+            timer: 3000,
+          });
         }).catch((erro)=>{
           console.log(erro)
         })

@@ -32,24 +32,21 @@ export const MainContainer = styled.div`
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0 25px;
+    width: 95vw;
+    /* border: 2px solid white; */
     img {
       margin: 0;
       width: 50px;
     }
   }
-  .gerenciar {
+  .botoesHome {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 5px;
-    transition: 0.3s;
-    z-index: 1;
-    :hover {
-      transition: 0.3s;
-      transform: scale(1.1);
-    }
   }
   @media screen and (min-device-width: 280px) and (max-device-width: 425px) {
     height: 15vh;
@@ -67,7 +64,7 @@ export const MainContainer = styled.div`
   }
 `;
 
-export const Logout = styled.div`
+export const LogedIn = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: column;

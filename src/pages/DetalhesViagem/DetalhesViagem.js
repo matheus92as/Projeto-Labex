@@ -2,9 +2,8 @@ import React, { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Header from '../../component/Header/Header'
 import { decisao, PegaDetalhe } from '../../customHooks/Requests'
-import { pagGerenciar, pagInicial } from '../../routes/coordinator'
-import { Botoes, Infs, ListaCandidatos, MainContainer } from './styled'
-import voltaNave from '../../img/voltaNave.png'
+import { pagInicial } from '../../routes/coordinator'
+import { Infs, ListaCandidatos, MainContainer } from './styled'
 import Footer from '../../component/Footer/Footer'
 
 const DetalhesViagem = () => {
@@ -25,12 +24,6 @@ const DetalhesViagem = () => {
   return (
     <MainContainer>
       <Header/>
-      <Botoes>
-        <div onClick={()=>pagGerenciar(navegar,"gerenciar")}>
-            <img src={voltaNave} alt="Nave de volta"/>
-            <button>Voltar</button>
-        </div>
-      </Botoes>
       <h1>{detalhes.name}</h1>
       <Infs>
         <p><strong>Nome: </strong>{detalhes.name}</p>

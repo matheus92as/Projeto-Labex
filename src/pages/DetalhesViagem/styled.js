@@ -29,43 +29,6 @@ export const MainContainer = styled.div`
     }
 `
 
-export const Botoes = styled.div`
-    cursor: pointer;
-    display: flex;
-    align-items: flex-start;  
-    width: 85%;
-    img{
-        width: 50px;
-        margin: 5px;
-    }
-    button{
-        background-color: inherit;
-        font-size: 15px;
-        font-family: 'Electrolize', sans-serif;
-        text-shadow: 2px 5px 5px #000000;
-        border: none;
-        color: white;
-    }
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: 0.4s;
-        :hover{
-            transition: 0.4s;
-            transform: scale(1.1);
-        }
-    }
-    @media screen and (min-device-width:280px) and (max-device-width:425px){
-        img{
-            width: 40px;
-        }
-        button{
-            font-size: 13px;
-        }
-    }
-`
-
 export const Infs = styled.div`
     width: 80%;
     @media screen and (min-device-width:1320px) and (max-device-width:2560px){

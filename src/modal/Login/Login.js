@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { voltarPag, areaLogado } from '../../routes/coordinator';
 import { Background, MainContainer } from './style';
 import { useForm } from '../../customHooks/Requests';
+import swal from 'sweetalert';
 
 const Login = () => {
   const { formulario, onChange, limpaInputs } = useForm({ email: "", password: "" });
@@ -22,9 +23,21 @@ const Login = () => {
         .then((response) => {
           limpaInputs()
           localStorage.setItem("token", response.data.token);
+          swal({
+            title: "Acesso concedido",
+            text: "Bem vindo(a) de volta!",
+            icon: "success",
+            buttons: false,
+            timer: 3000,
+          });
           areaLogado(navegar,"logado");
         }).catch((error) => {
-          alert("Não foi possivel se logar")
+          swal({
+            title: "Não foi possivel se logar",
+            icon: "error",
+            buttons: false,
+            timer: 3000,
+          });
           voltarPag(navegar);
         });
   };
