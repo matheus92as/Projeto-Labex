@@ -23,12 +23,12 @@ const ListaGerencia = (props) => {
       if (willDelete) {
         const token = localStorage.getItem("token");
         axios.delete(`${baseUrl}/trips/${id}`, { headers: { auth: token } });
-        props.setAtualiza(!props.atualiza);
         swal("Feito, agora é só desfazer as malas!", {
           icon: "success",
           buttons: false,
           timer: 4000,
         });
+        props.setAtualiza(!props.atualiza);
       } else {
         swal("A viagem ainda esta de pé!",{
           buttons: false,

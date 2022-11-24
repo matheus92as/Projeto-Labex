@@ -72,7 +72,7 @@ export const CardViagem = styled.div`
     }
 `
 
-export const ListContainer = styled.section`
+export const ListContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;

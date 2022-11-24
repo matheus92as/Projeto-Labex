@@ -37,8 +37,7 @@ export const SecondContainer = styled.div`
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: center;
-       
+        justify-content: center;       
     }
     @media screen and (min-device-width:280px) and (max-device-width:425px){
        h1{

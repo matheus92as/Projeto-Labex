@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import baseUrl from "../constants/BaseURL";
+import swal from "sweetalert";
 
 export const PegaLista = (atualiza) => {
   const [viagens, setViagens] = useState([]);
@@ -30,21 +31,80 @@ export const PegaDetalhe = (idViagem) => {
 };
 
 export const decisao = (idViagem, idCandidato, escolha) => {
-  if (window.confirm("Tem certeza dessa escolha?")) {
-    const token = localStorage.getItem("token");
-    const body = { approve: escolha };
-    axios
-      .put(
-        `${baseUrl}/trips/${idViagem}/candidates/${idCandidato}/decide`,
-        body,
-        { headers: { auth: token } }
-      )
-      .then((resposta) => {
-        alert("Decisão registrada");
-      })
-      .catch((erro) => {
-        alert("Não foi possivel tomar a decisão");
-      });
+  if (escolha === true) {
+    swal({
+      title: "Tem certeza dessa escolha?",
+      text: "Ainda há vagas?!",
+      dangerMode: true,
+      buttons: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        const token = localStorage.getItem("token");
+        const body = { approve: escolha };
+        axios
+          .put(
+            `${baseUrl}/trips/${idViagem}/candidates/${idCandidato}/decide`,
+            body,
+            { headers: { auth: token } }
+          )
+          .then((resposta) => {
+            swal("Feito, mais um pra festa!", {
+              icon: "success",
+              buttons: false,
+              timer: 4000,
+            });
+          })
+          .catch((erro) => {
+            swal("Não foi possivel tomar a decisão", {
+              icon: "error",
+              buttons: false,
+              timer: 4000,
+            });
+          });
+      } else {
+        swal("Tudo bem, você ainda pode decidir mais tarde!", {
+          buttons: false,
+          timer: 3500,
+        });
+      }
+    });
+  } else {
+    swal({
+      title: "Tem certeza dessa escolha?",
+      text: "Alguem pode ficar chateado.",
+      dangerMode: true,
+      buttons: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        const token = localStorage.getItem("token");
+        const body = { approve: escolha };
+        axios
+          .put(
+            `${baseUrl}/trips/${idViagem}/candidates/${idCandidato}/decide`,
+            body,
+            { headers: { auth: token } }
+          )
+          .then((resposta) => {
+            swal("Decisão registrada!", {
+              icon: "error",
+              buttons: false,
+              timer: 4000,
+            });
+          })
+          .catch((erro) => {
+            swal("Não foi possivel tomar a decisão", {
+              icon: "error",
+              buttons: false,
+              timer: 4000,
+            });
+          });
+      } else {
+        swal("Tudo bem, você ainda pode decidir mais tarde!", {
+          buttons: false,
+          timer: 3500,
+        });
+      }
+    });
   }
 };
 

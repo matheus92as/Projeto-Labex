@@ -5,6 +5,7 @@ import { abreInscriçãoDeslogado, abreInscriçãoLogado } from '../../routes/co
 import { PegaLista } from '../../customHooks/Requests'
 import planeta from '../../img/planeta.png'
 import { useState } from 'react'
+import moment from 'moment/moment'
 
 const ListaDeViagens = () => {
     const [coords, setCoords] = useState({x: 0, y: 0});
@@ -26,7 +27,7 @@ const ListaDeViagens = () => {
                 <p><strong>Descrição: </strong>{viagem.description}</p>
                 <p><strong>Planeta: </strong>{viagem.planet}</p>
                 <p><strong>Duração: </strong>{viagem.durationInDays}</p>
-                <p><strong>Data: </strong>{viagem.date}</p>
+                <p><strong>Data: </strong>{moment(viagem.date).format("DD/MM/YYYY")}</p>
             </CardViagem>
         )
     })

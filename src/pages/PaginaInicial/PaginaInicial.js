@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { CardViagem, MainContainer, Parallax, SecondContainer } from './style'
+import { MainContainer, Parallax, SecondContainer } from './style'
 import { useParams, useNavigate } from 'react-router-dom'
 import Header from '../../component/Header/Header'
 import ListaDeViagens from '../../component/ListaDeViagens/ListaDeViagens'
@@ -11,9 +11,6 @@ import planeta from '../../img/planetaParalax.png'
 import nave from '../../img/naveParalax.png'
 import terra from '../../img/terraParalax.png'
 import red from '../../img/red.png'
-import { useState } from 'react'
-import { PegaLista } from '../../customHooks/Requests'
-import { useRef } from 'react'
 
 const PaginaInicial = () => {
   const params = useParams()
