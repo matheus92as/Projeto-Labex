@@ -3,55 +3,65 @@ import espaco from '../../img/espaco.png'
 import espacoVazio from '../../img/espacoVazio.png'
 
 export const MainContainer = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-color: white;
-background: #242424 url(${espaco});
-animation: brilhoEspaco 4s infinite alternate ease-in-out;
-@keyframes brilhoEspaco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    text-shadow: 2px 5px 5px #000000;
+    min-height: 100vh;
+    width: 100%;
+    background: #242424 url(${espaco});
+    animation: brilhoEspaco 4s infinite alternate ease-in-out;
+    @keyframes brilhoEspaco{
     from{
             background: #242424 url(${espaco});
     }
     to{
             background: #242424 url(${espacoVazio});
     }
-}
-min-height: 100vh;
-button{
-    padding: 10px;
-    margin: 5px;
-    background-color: inherit;
-    font-size: 21px;
-    margin-top: 0;
-}
-.botoes{
-    margin: 15px;
+    }
+    @media screen and (min-device-width:280px) and (max-device-width:425px){
+        h1{
+            font-size: 27px;
+        }
+    }
+`
+export const Botoes = styled.div`
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 85%;
     img{
-        width: 60px;
-        margin-top: 10px;
+        width: 50px;
+        margin: 5px;
+    }
+    button{
+        background-color: inherit;
+        font-size: 15px;
+        font-family: 'Electrolize', sans-serif;
+        text-shadow: 2px 5px 5px #000000;
+        border: none;
+        color: white;
     }
     div{
         display: flex;
         flex-direction: column;
         align-items: center;
         transition: 0.4s;
-        border-radius: 15px;
-        button{
-            border: none;
-            color: white;
-        }
         :hover{
             transition: 0.4s;
-            transform: scale(1.2);
-            color: white;
-            background-color: #303030;
-            border-color: white;
+            transform: scale(1.1);
         }
     }
-}
+    @media screen and (min-device-width:280px) and (max-device-width:425px){
+        img{
+            width: 40px;
+        }
+        button{
+            font-size: 13px;
+        }
+    }
 `

@@ -21,8 +21,8 @@ Este é um projeto que visa simular um site de viagens, mas com a ideia de criar
 
 Para ilustrar o progresso na criação da pagina irei apresentar diversos links das etapas de constução, sendo a quinta versão a ultima realizada no tempo dado durante o curso da Labenu, a versão final já trás mais conhecimentos, funcionalidades e estilização diferente pois foi realizada após o curso.
 
-Login - matheus92as@gmail.com
-Senha - 13579
+Login - teste@teste.com
+Senha - 12345
 
 - Primeira versão - https://disillusioned-frog.surge.sh
 - Segunda versão - https://likeable-eggs.surge.sh

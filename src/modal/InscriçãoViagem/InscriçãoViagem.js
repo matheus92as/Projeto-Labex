@@ -18,6 +18,13 @@ const InscriçãoViagem = () => {
       setId(event.target.value)
     }
 
+    const clickFora = (event) => {
+      let modal = document.getElementById("modal");
+      if (!modal.contains(event.target)) {
+        voltarPag(navegar)
+      }
+    }
+
     const inscricao = (event) => {
       event.preventDefault()
       const token = localStorage.getItem("token");
@@ -39,8 +46,8 @@ const InscriçãoViagem = () => {
       )
     })
   return (
-    <Background>
-        <MainContainer>
+    <Background onClick={clickFora}>
+        <MainContainer id='modal'>
           <h1>Inscrição para Viagem</h1>
           <form onSubmit={inscricao}>
             <select onChange={onChangeId}>
@@ -85,8 +92,8 @@ const InscriçãoViagem = () => {
               />
               <button>Enviar</button>
             </form>
-            <button onClick={()=>voltarPag(navegar)}>
-                Voltar
+            <button className='fechar' onClick={()=>voltarPag(navegar)}>
+                X
             </button>
         </MainContainer>
     </Background>
