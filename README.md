@@ -67,21 +67,21 @@ Estas foram algumas das técnologias utilizadas no projeto, caso precise de refe
 
 - Realizado
 
-![labex1](https://user-images.githubusercontent.com/99031516/166168740-74c28d91-9bd5-4e1e-b7d3-ce5c7519fd05.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203863576-7e2f3eb2-86a1-4266-b4bc-8821beb98640.png)
 
-![labex2](https://user-images.githubusercontent.com/99031516/166168742-704c420a-b2e8-4566-ad86-680c77680170.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203863693-527ec1af-10d1-425f-98e8-bd8d1d6a95f5.png)
 
-![labex3](https://user-images.githubusercontent.com/99031516/166168743-8e534faa-4d76-4dbf-94b0-934393c0a187.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203863775-8e8b99b5-ac0e-4787-a052-d18ba6860de9.png)
 
-![labex4](https://user-images.githubusercontent.com/99031516/166168744-74d98c82-be19-4ec2-83b9-cdb521596090.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203863827-23a57f1d-eb85-42ff-a226-f525d24cc4f3.png)
 
-![labex5](https://user-images.githubusercontent.com/99031516/166168746-9365623f-dd71-4fe7-b78a-f10e052d5dae.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203863866-469e4282-a025-4c17-8b61-b5475d8f3f30.png)
 
-![labex6](https://user-images.githubusercontent.com/99031516/166168749-535d443b-e970-4610-8a30-168be91d0102.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203863904-9d8d7d88-9a50-443d-b9da-a28ac3f93078.png)
 
-![labex7](https://user-images.githubusercontent.com/99031516/166168750-6622c384-ea59-436d-805e-f02b1a28c5ef.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203864130-0d6d0fde-4e18-4db3-b7a4-afe68ed1872b.png)
 
-![labex8](https://user-images.githubusercontent.com/99031516/166168751-5b91f0ea-7407-4426-a86d-a645d9bb5f9b.jpg)
+![image](https://user-images.githubusercontent.com/99031516/203864157-13b8ce4c-af06-4e60-986b-951bc9c96de3.png)
 
 </br>
 
