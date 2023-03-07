@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   color: white;
   font-size: 21px;
   font-family: "Electrolize", sans-serif;
@@ -19,10 +20,11 @@ export const MainContainer = styled.div`
   }
   .bg {
     height: 100%;
-    width: 100%;
+    width: 110%;
     position: absolute;
+    bottom: -15px;
     background-image: linear-gradient(
-      rgba(255, 0, 0, 0) ,
+      rgba(255, 0, 0, 0),
       rgba(0, 0, 0, 0.75) 20%
     );
     filter: blur(5px);
@@ -38,7 +40,8 @@ export const AppSocialBox = styled.div`
   z-index: 1;
   @media screen and (min-device-width: 280px) and (max-device-width: 425px) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
   }
 `;
 
@@ -66,26 +69,31 @@ export const AppDown = styled.div`
 `;
 
 export const Social = styled.div`
-  width: 35%;
+  width: 65%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  img {
-    cursor: pointer;
-    width: 45px;
-    margin-right: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  .links {
+    img {
+      cursor: pointer;
+      width: 45px;
+      margin-right: 10px;
+    }
   }
   @media screen and (min-device-width: 280px) and (max-device-width: 425px) {
     width: 100%;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 0%;
     div {
       margin-left: 15px;
       flex-direction: row;
       align-items: center;
     }
-    img {
-      width: 30px;
+    .links {
+      img {
+        width: 30px;
+      }
     }
   }
 `;
@@ -108,6 +116,6 @@ export const Infs = styled.div`
 export const Logo = styled.img`
   width: 200px;
   @media screen and (min-device-width: 280px) and (max-device-width: 425px) {
-    width: 150px;
+    width: 120px;
   }
 `;

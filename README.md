@@ -30,11 +30,11 @@ Senha - 12345
 
 </br>
 
-### Link Surge 
+### Link Funcional 
 
 Esta aplicação foi desenvolvida durante o Bootcamp da Labenu, então foi utilizada uma API feita por eles, esta aplicação é totalmente Frontend, então com o link abaixo você pode testar o projeto sem necessidade de roda-lo em sua maquina antes.
 
-- https://knowledgeable-skate.surge.sh
+- [projeto-labex.vercel.app](https://projeto-labex.vercel.app)
 
 ---
 

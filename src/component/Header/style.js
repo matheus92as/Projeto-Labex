@@ -7,14 +7,15 @@ export const MainContainer = styled.div`
   height: 20vh;
   width: 100%;
   color: white;
+  overflow: hidden;
   position: relative;
-  /* z-index: 1; */
   .bg {
-    height: 100%;
-    width: 100%;
+    height: 105%;
+    width: 110%;
     position: absolute;
+    top: -15px;
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.75) 80%,
+      rgba(0, 0, 0, 0.65) 70%,
       rgba(255, 0, 0, 0)
     );
     filter: blur(5px);
@@ -35,7 +36,6 @@ export const MainContainer = styled.div`
     justify-content: space-between;
     margin: 0 25px;
     width: 95vw;
-    /* border: 2px solid white; */
     img {
       margin: 0;
       width: 50px;
@@ -51,7 +51,7 @@ export const MainContainer = styled.div`
   @media screen and (min-device-width: 280px) and (max-device-width: 425px) {
     height: 15vh;
     button {
-      font-size: 11px;
+      font-size: 9px;
     }
     .botoes {
       margin: 0;
@@ -60,6 +60,9 @@ export const MainContainer = styled.div`
         margin: 0;
         width: 40px;
       }
+    }
+    .botoesHome {
+    margin-right: 10px;
     }
   }
 `;
@@ -82,6 +85,9 @@ export const LogedIn = styled.div`
   }
   @media screen and (min-device-width: 280px) and (max-device-width: 425px) {
     margin: 0px;
+    img {
+    width: 45px;
+  }
   }
 `;
 
@@ -116,14 +122,10 @@ export const Logo = styled.img`
   position: absolute;
   right: 40%;
   top: 7%;
+  transition: 0.3s;
   @media screen and (min-device-width: 300px) and (max-device-width: 425px) {
-    width: 170px;
-    top: 10%;
-    right: 45%;
-  }
-  @media screen and (min-device-width: 280px) and (max-device-width: 300px) {
-    width: 140px;
-    top: 10%;
-    right: 50%;
+    width: 125px;
+    top: 15%;
+    left: 25%;
   }
 `;

@@ -8,6 +8,7 @@ export const MainContainer = styled.div`
     align-items: center;
     text-align: center;
     color: white;
+    height: fit-content;
     background: #242424 url(${espaco});
     animation: brilhoEspaco 4s infinite alternate ease-in-out;
     @keyframes brilhoEspaco{
@@ -27,9 +28,11 @@ export const SecondContainer = styled.div`
     overflow-x: hidden;
     perspective: 10px;
     position: relative;
+    justify-content: space-between;
     h1{
         width: 70%;
         margin: 25px 0;
+        font-size: 37px;
         font-family: 'Orbitron', sans-serif;
         text-shadow: 2px 5px 5px #000000;
     }
@@ -37,7 +40,8 @@ export const SecondContainer = styled.div`
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: center;       
+        justify-content: center;
+        min-height: 1500px ;
     }
     @media screen and (min-device-width:280px) and (max-device-width:425px){
        h1{
@@ -54,8 +58,9 @@ export const SecondContainer = styled.div`
 
 export const Parallax = styled.div`
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
@@ -81,7 +86,7 @@ export const Parallax = styled.div`
         width: 75%;
         position: absolute;
         left: -350px;
-        bottom: -650px;
+        bottom: -100%;
         object-fit: cover; 
         transform: translateZ(-5px) scale(1.5); 
         z-index : -3;
@@ -90,7 +95,7 @@ export const Parallax = styled.div`
         width: 30%;
         position: absolute;
         object-fit: cover;
-        bottom: -1900px;
+        bottom: -200%;
         right: -450px;
         transform: translateZ(-15px) scale(2.5);
     }
