@@ -31,12 +31,12 @@ const PaginaInicial = () => {
       <SecondContainer>
         <Header/>
         <Parallax>
-          <img src={terra} className='terra'/>
-          <img src={nave} className='nave'/>
-          <img src={planeta} className='planeta'/>
           <h1>
             Encontre viagens espaciais, explore a galaxia, ou se preferir crie a própria viagem e chame os seus amigos!
           </h1>
+          <img src={terra} className='terra'/>
+          <img src={nave} className='nave'/>
+          <img src={planeta} className='planeta'/>
         <img src={red} className='red'/>
         </Parallax>
         <div className='listbox'>

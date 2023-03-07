@@ -55,14 +55,20 @@ export const Botoes = styled.div`
     }
   }
   @media screen and (min-device-width: 280px) and (max-device-width: 425px) {
+    justify-content: start;
+    width: 90%;
     img {
-      width: 40px;
+      width: 35px;
     }
     button {
       font-size: 13px;
     }
     h1 {
-      font-size: 27px;
+      font-size: 24px;
+      width: 80%;
     }
+    div {
+    right: -15px;
+  }
   }
 `;

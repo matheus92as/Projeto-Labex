@@ -30,23 +30,25 @@ const ListaGerencia = (props) => {
         });
         props.setAtualiza(!props.atualiza);
       } else {
-        swal("A viagem ainda esta de pé!",{
+        swal("A viagem ainda esta em pé!", {
           buttons: false,
           timer: 3000,
         });
       }
-    })
+    });
   };
 
   const listaGerenciavel = viagens.map((viagem) => {
     return (
       <CardLista key={viagem.id}>
-        <div onClick={() => abreDetalhes(navegar, `${viagem.id}`)}>
-          <p>{viagem.name}</p>
-        </div>
-        <div className="excluir" onClick={() => excluiViagem(viagem.id)}>
-          <img className="img1" src={rostoBuracoNegro} alt="Excluir"></img>
-          <img className="img2" src={buracoNegro}></img>
+        <div className="content">
+          <div onClick={() => abreDetalhes(navegar, `${viagem.id}`)}>
+            <p>{viagem.name}</p>
+          </div>
+          <div className="excluir" onClick={() => excluiViagem(viagem.id)}>
+            <img className="img1" src={rostoBuracoNegro} alt="Excluir"></img>
+            <img className="img2" src={buracoNegro}></img>
+          </div>
         </div>
       </CardLista>
     );
