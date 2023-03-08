@@ -45,7 +45,7 @@ Esta aplicação foi desenvolvida durante o Bootcamp da Labenu, então foi utili
 Estas foram algumas das técnologias utilizadas no projeto, caso precise de referências ou mais detalhes na documentação.
 
 * [Reactjs](https://pt-br.reactjs.org) - O framework web usado.
-* [Axios](https://www.npmjs.com/package/axios) - Usada para consumo da nossa própia API.
+* [Axios](https://www.npmjs.com/package/axios) - Usada para consumo da API criada pela Labenu.
 * [Styled Components](https://styled-components.com) - Para estilização do nosso Front.
 * [Moment](https://momentjs.com) - Biblioteca muito util para conversão de datas, utilizada para manipular dados vindos do Backend.
 * [Sweet Alert](https://sweetalert.js.org/guides/) - Biblioteca responsavel pela geração de alertas personalizados.
@@ -69,19 +69,19 @@ Estas foram algumas das técnologias utilizadas no projeto, caso precise de refe
 
 ![image](https://user-images.githubusercontent.com/99031516/203863576-7e2f3eb2-86a1-4266-b4bc-8821beb98640.png)
 
-![image](https://user-images.githubusercontent.com/99031516/203863693-527ec1af-10d1-425f-98e8-bd8d1d6a95f5.png)
+![image](https://user-images.githubusercontent.com/99031516/223776626-e193d6bb-3583-4430-9496-d48fb953ecce.png)
 
-![image](https://user-images.githubusercontent.com/99031516/203863775-8e8b99b5-ac0e-4787-a052-d18ba6860de9.png)
+![image](https://user-images.githubusercontent.com/99031516/223776852-6c7a832f-2672-436e-b203-a76b56f87bf9.png)
 
 ![image](https://user-images.githubusercontent.com/99031516/203863827-23a57f1d-eb85-42ff-a226-f525d24cc4f3.png)
 
-![image](https://user-images.githubusercontent.com/99031516/203863866-469e4282-a025-4c17-8b61-b5475d8f3f30.png)
+![image](https://user-images.githubusercontent.com/99031516/223777450-3cc2e958-3ca7-41b0-b2aa-b4fe0f732675.png)
 
-![image](https://user-images.githubusercontent.com/99031516/203863904-9d8d7d88-9a50-443d-b9da-a28ac3f93078.png)
+![image](https://user-images.githubusercontent.com/99031516/223777713-61a5775e-eabc-482b-bbe4-04d2db30e9ad.png)
 
-![image](https://user-images.githubusercontent.com/99031516/203864130-0d6d0fde-4e18-4db3-b7a4-afe68ed1872b.png)
+![image](https://user-images.githubusercontent.com/99031516/223778145-41318568-a26b-4901-951f-5516199dd4ea.png)
 
-![image](https://user-images.githubusercontent.com/99031516/203864157-13b8ce4c-af06-4e60-986b-951bc9c96de3.png)
+![image](https://user-images.githubusercontent.com/99031516/223778262-1dde0313-b073-4706-adbe-cfdba69716d1.png)
 
 </br>
 
